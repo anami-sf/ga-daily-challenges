@@ -138,11 +138,15 @@ computeRemainder(4,0) //=> Infinity
 computeRemainder(10.5, 3) //=> 1.5
 -----------------------------------------------------------------*/
 // Your solution for 05-computeRemainder:
+const computeRemainder = (dividend, divisor) => {
+  if (divisor === 0){return Infinity}
 
+  // const quotientFloat = dividend / divisor
+  // const quotientInt = Math.floor(quotientFloat) 
+  // return ((quotientFloat - quotientInt) * divisor)
 
-
-
-
+  return dividend % divisor
+}
 /*-----------------------------------------------------------------
 Challenge: 06-range
 
