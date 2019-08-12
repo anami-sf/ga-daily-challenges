@@ -84,9 +84,14 @@ sumNumbers([]) //=> 0
 -----------------------------------------------------------------*/
 // Your solution for 03-sumNumbers here:
 
+const sumNumbers = (array) => {
+  let total = 0
 
-
-
+  array.forEach(function (num) {
+  total += num
+  })
+  return total;
+}
 
 /*-----------------------------------------------------------------
 Challenge: 04-addList
