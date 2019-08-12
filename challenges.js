@@ -112,9 +112,12 @@ add(7,-12) //=> -5
 -----------------------------------------------------------------*/
 // Your solution for 04-addList here:
 
-
-
-
+const addList = (...nums) => {
+  const total = nums.reduce((accumulator, num) => {
+    return accumulator + num
+  }, 0)
+  return total
+}
 
 /*-----------------------------------------------------------------
 Challenge: 05-computeRemainder
